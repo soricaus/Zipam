@@ -1,0 +1,606 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block content %}
+    <!-- Services Section -->
+    <section id="servicii">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Asiguram pentru tine</h2>
+                    <h3 class="section-subheading text-muted">Profitati de o evaluare gratuita si consiliere.
+                        Consultantii nostrii vor fi disponibili pentru a discuta cu tine despre urmatoarea imbunatatire
+                        a casei tale. Ne gasiti la showroom-ul nostru din <strong>Str. Mihai Viteazul Nr.1</strong> din
+                        <strong>Suceava</strong>, de luni pana vineri, de la <strong>09.00</strong> la
+                        <strong>17.00</strong>, sau la telefon fix <strong>0330 401634</strong> , telefon mobil <strong>0743
+                            453381, 0749 014493</strong>.</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-handshake-o fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Consiliere</h4>
+                    <p class="text-muted text-justify" id="text-ident">Pe lângă o serie de cerinţe tehnice, cum ar fi
+                        rezistenţa la vânt, siguranţa omului sau diverse norme de proiectare şi execuţie, tâmplăria
+                        trebuie să îndeplinescă o serie de cerinţe care privesc uşurinţa utilizării, întreţinerea
+                        ulterioară şi eventualele probleme legate de exploatarea în timp. De aceea va oferim asistenta
+                        pe toata durata colaborarii, atat in etapa de pre-vanzare cat si dupa. Cu cat oferi mai multe
+                        detalii despre necesitatile proiectului tau, cu atat mai precise vor fi si propunerile
+                        noastre.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-pencil-square-o fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Masuratori</h4>
+                    <p class="text-muted text-justify">Măsurătorile pentru stabilirea cotelor noii tâmplării cu profle
+                        PVC trebuie
+                        făcute cu cea mai mare atenţie de corectitudinea lor depinzind execuţia ulterioară a tâmplăriei.
+                        Stabilirea cotelor de fabricaţie pentru noua tâmplărie din profile PVC se face în moduri
+                        diferite, ţinând cont de tipul clădirii şi de tipul vechii tâmplării :</p>
+                    <ul class="text-muted">
+                        <li>situaţia unei construcţii noi,</li>
+                        <li>existenţa tâmplăriei vechi din PVC sau aluminiu,</li>
+                        <li>existenţa unei tâmplării vechi din lemn.</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-windows fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Montaj</h4>
+                    <p class="text-muted text-justify">In cazul lucrarilor de renovare (inlocuirea ferestrelor din lemn
+                        sau chiar PVC sau aluminiu, deja existente) se recomanda ca ferestrele noi din PVC sa fie
+                        montate pe locul celor vechi, cat mai aproape de rebordul exterior al golului de zidarie. La
+                        constructiile noi, ferestrele PVC cu geam termopan se vor fixa la jumatatea grosimii peretelui,
+                        in dreptul termoizolatiei acestuia, orice alta pozitionare fata de zona indicata putand duce la
+                        aparitia condensului pe fereastra sau in zone imediat adiacente acesteia..</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produse Grid Section -->
+    <section id="produse" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Produse</h2>
+                    <h3 class="section-subheading text-muted">Va oferim consiliere, masuratori si montaj pentru:</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 produse-item">
+                    <a href="#produseModal1" class="produse-link" data-toggle="modal">
+                        <div class="produse-hover">
+                            <div class="produse-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{% static "images/logos/fereastra.jpg" %}" class="img-responsive img-centered" alt="">
+                    </a>
+                    <div class="produse-caption">
+                        <h4>Ferestre</h4>
+                        <p class="text-muted">Ferestre si usi termoizolante</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 produse-item">
+                    <a href="#produseModal2" class="produse-link" data-toggle="modal">
+                        <div class="produse-hover">
+                            <div class="produse-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{% static "images/logos/rulouri.jpg" %}" class="img-responsive img-centered" alt="">
+                    </a>
+                    <div class="produse-caption">
+                        <h4>Rulouri exterioare</h4>
+                        <p class="text-muted">Aplicate sau suprapuse</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 produse-item">
+                    <a href="#produseModal3" class="produse-link" data-toggle="modal">
+                        <div class="produse-hover">
+                            <div class="produse-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{% static "images/logos/jaluzele.jpg" %}" class="img-responsive img-centered" alt="">
+                    </a>
+                    <div class="produse-caption">
+                        <h4>Jaluzele verticale</h4>
+                        <p class="text-muted">Design </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 produse-item">
+                    <a href="#produseModal4" class="produse-link" data-toggle="modal">
+                        <div class="produse-hover">
+                            <div class="produse-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{% static "images/logos/rolete.jpg" %}" class="img-responsive img-centered" alt="">
+                    </a>
+                    <div class="produse-caption">
+                        <h4>Rolete</h4>
+                        <p class="text-muted">Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 produse-item">
+                    <a href="#produseModal5" class="produse-link" data-toggle="modal">
+                        <div class="produse-hover">
+                            <div class="produse-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{% static "images/logos/garaj.jpg" %}" class="img-responsive img-centered" alt="">
+                    </a>
+                    <div class="produse-caption">
+                        <h4>Usi de garaj</h4>
+                        <p class="text-muted">Tip rulou</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 produse-item">
+                    <a href="#produseModal6" class="produse-link" data-toggle="modal">
+                        <div class="produse-hover">
+                            <div class="produse-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{% static "images/logos/plase.jpg" %}" class="img-responsive img-centered" alt="">
+                    </a>
+                    <div class="produse-caption">
+                        <h4>Plase anti insecte</h4>
+                        <p class="text-muted">Tip rulou sau pe balamale</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="parteneri" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Partenerii nostri de incredere :</h2>
+                    <h3 class="section-subheading text-muted">Produsele de calitate au calitatea la baza.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="partners-member">
+                        <h3>ROTO</h3>
+                        <p class="text-muted">Lider mondial in feronerie</p>
+                        <img src="{% static "images/produse/feronerie.jpg" %}" class="img-responsive" alt="">
+                        <ul class="">
+                            <li><a href="#"></a><strong>6 puncte de inchidere</strong> ce asigură manevrabilitatea şi
+                                fiabilitatea ferestrelor în timp, precum şi securitatea părţilor mobile.
+                            </li>
+                            <li><a href="#"></a>Blocator tip ciuperca - echiparea standard are cel puţin doua elemente
+                                antiefractie.
+                            </li>
+                            <li><a href="#"></a>Microventilatia din sistemul de feronerie Roto asigura un schimb de aer
+                                regulat printr-o mica deschidere de ventilatie in pozitia de batare.
+                            </li>
+                            <li><a href="#"></a>Prin montarea elementului de contra actionare gresita, cerceveaua sta
+                                intotdeauna la acelasi nivel, impiedicand astfel ca elementul de inchidere sa-si
+                                modifice pozitia. Elementul de cercevea se fixeaza pe mecanism iar cel de toc este
+                                reglabil pe inaltime cu un stift.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="partners-member">
+                        <h3>KOMMERLING</h3>
+                        <p class="text-muted">Profile ecologice si stabile chimic</p>
+                        <img src="{% static "images/produse/Koemmerling-76.jpg" %}" class="img-responsive" alt="">
+                        <ul class="">
+                            <li><a href="#"></a>Sistemele de profile utilizate in productia de ferestre
+                                nu contin plumb; in reteta de stabilizatori folosita se utilizeaza in totalitate doar
+                                formula ecologica Calciu – Zinc.
+                            </li>
+                            <li><a href="#"></a>Ferestrele din PVC dur asigura o buna rezistenta la atacul bazelor,
+                                acizilor neoxidanti, sarii, alcoolilor, grasimilor si uleiurilor minerale.
+                            </li>
+                            <li><a href="#"></a>Durata de viata a ferestrelor realizate din PVC este de trei ori mai
+                                mare decat a ferestrelor clasice din lemn. Pentru o fereastra din lemn, costurile
+                                energiei sunt cu 5% mai mari decat pentru o fereastra, iar daunele create mediului
+                                inconjurator in productia ferestrelor de lemn sunt semnificative.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="partners-member">
+                        <h3>SAINT-GOBAIN</h3>
+                        <p class="text-muted">Sticla “Low emisivity” si Argon . </p>
+                        <img src="{% static "images/produse/sticla.jpg" %}" class="img-responsive" alt="">
+                        <ul class=" ">
+                            <li><a href="#"></a>Sticla mata – sticla obtinuta prin procedeul de sablare.</li>
+                            <li><a href="#"></a>Sticla LowE – sticla cu un strat de oxizi metalici depus prin procedeul
+                                electromagnetic pe una din suprafetele geamului float; acest strat contribuie intr-un
+                                mod semnificativ la imbunatatirea aspectului termoizoilant al geamului.
+                            </li>
+                            <li><a href="#"></a>Sticla 4Seasons – nivel ridicat de izolare termica cu o protectie solara
+                                eficienta.
+                            </li>
+                            <li><a href="#"></a>Sticla stratificata antiefractie – fabricat prin imbinarea plana a doua
+                                foi de sticla cu unul sau mai multe straturi de folie din
+                                polivinilbutiral (PVB), caracterizata prin rezistenta deosebita, aderenta si
+                                elesticitate.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-subheading text-muted">De aceea va putem oferi :</h2>
+                    <p class="large text-muted"><strong>5 ani garantie</strong>pentru elemente de feronerie,
+                        3 ani pentru geamul termoizolant ( deficientele din interiorul pachetului de sticla);
+                        10 ani pentru profilele din PVC (pastrarea caracteristicilor tehnice, culorii si a luciului);
+                        2 ani pentru accesorii (plase contra insectelor, rolete, jaluzele verticale, rulouri exterioare
+                        din
+                        aluminiu)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avantaje Section -->
+    <section id="avantaje">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Avantajele timplariei din PVC :</h2>
+                    <h3 class="section-subheading text-muted">Ferestrele tip termopan din PVC se monteaza usor de catre
+                        specialisti, sunt rezistente la efractie si nu prezinta riscuri de accidente. Sticla folosita
+                        pentru acest tip de geamuri este tratata, astfel incat filtreaza caldura si permite trecerea
+                        luminii in interior, fara a produce "efect de sera". Iata o serie de avantaje ale acestui tip de
+                        ferestre:</h3>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <h4>Izolatie termica si fonica</h4>
+                    <a href="#">
+                        <img src="{% static "images/produse/izolatie.jpg" %}" class="img-responsive img-centered"
+                             alt="">
+                    </a>
+                    <p class="text-justify">Conductivitatea termica redusa a PVC-ului si folosirea sticlei termoizolante
+                        tratate confera tamplariei o <strong>izolatie termica superioara.</strong> Cu un indice ridicat
+                        de atenuare fonica ferestrele cu profile PVC ofera protectie eficienta la zgomot, astfel ca sunt
+                        ideale chiar si pentru locuintele pozitionate in zone urbane aglomerate.</p>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <h4>Multitudine de forme si culori</h4>
+                    <a href="">
+                        <img src="{% static "images/produse/culori.jpg" %}" class="img-responsive img-centered" alt="">
+                    </a>
+                    <p class="text-justify">Cu profilele PVC pot fi diversificate formele si culorile ferestrelor si
+                        usilor, reflectind individualitatea si gustul oricarui client. O constructie veche poate obtine
+                        un aspect interior si exterior placut si surprinzator datorita ferestrelor bine alese. <strong>Coloreaza-ti
+                            locuinta si viata cu fereastra ideala.</strong></p>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <h4>Siguranta si <br>confort</h4>
+                    <a href="#">
+                        <img src="{% static "images/produse/siguranta.jpg" %}" class="img-responsive img-centered"
+                             alt="">
+                    </a>
+                    <p class="text-justify">Este o preconditie importanta a unei incaperi. Din punct de vedere ecologic,
+                        PVC este un material perfect. Nu contine plumb si nu intretine arderea. Folosind minerele si
+                        blocatorii antiefractie, fereastra ideala este astfel proiectata incat sa ofere cea mai buna
+                        protectie anti-efractie, pentru ca tu <strong>sa te poti simti mereu in siguranta.</strong></p>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <h4>Durata lunga de viata si intretinere usoara</h4>
+                    <a href="#">
+                        <img src="{% static "images/produse/intretinere.jpg" %}" class="img-responsive img-centered"
+                             alt="">
+                    </a>
+                    <p class="text-justify">Ferestrele din PVC sunt durabile, avand o etanseitatea aproape perfecta la
+                        apa si vant. Rezista la oscilatii de temperatura, avand o durata de viata estimata la circa 50
+                        de ani . Nu ruginesc si nu trebuie sa fie vopsite. In afara de lubrefierea feroneriei si a
+                        garniturilor o data la cateva luni/ani, acest tip de fereastra <strong>nu are nevoie de alte
+                            intretineri.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contacteaza-ne</h2>
+                    <h3 class="section-subheading text-muted">Vei primi cu siguranta raspuns la intrebarile tale.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" method="post" id="contactForm" novalidate action="">{% csrf_token %}
+                        <div class="row">
+                            <div class="col-lg-12">
+                                {% for field in form %}
+                                    <div class="col-lg-6 form-group">
+                                        <label class="col-lg-2 control-label">{{ field.label_tag }}</label>
+                                        <div class="col-lg-4" id="form_field">{{ field }}</div>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                {% if messages %}
+                                    <div id="messages">
+                                        {% for message in messages %}
+                                            <h3 {% if message.tags %}>class="{{ message.tags }}"{% endif %}
+                                            >{{ message }}</h3>
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                                <button type="submit" class="btn btn-xl">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Produse Modals -->
+    <!-- Use the modals below to showcase details despre your produse projects! -->
+
+    <!-- Produse Modal 1 -->
+    <div class="produse-modal modal fade" id="produseModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Ferestre si usi termoizolante</h2>
+                            <img class="img-responsive img-centered" src="{% static "images/produse/ferestre.jpg" %}"
+                                 alt="">
+                            <p>Sistemele de profile utilizate in productia de ferestre sunt din PVC dur, un material
+                                compatibil cu mediul inconjurator. Materiile prime care stau la baza fabricarii PVC-ului
+                                dur sunt titeiul si sarea, iar sistemele de ferestre sunt certificate Greenline, fiind
+                                produse ecologice. Calitatea tamplariei se pastreaza si dupa decenii de
+                                utilizare.Utilizam profile PVC de la firma germana <strong>Profine</strong>, marcile
+                                <strong>KBE 70 AD, Kommerling 76 AD si 76 MD</strong> – cel mai nou profil, <strong>cu
+                                    adancimea de 76mm si 3 garnituri de etanseizare</strong>. Garnitura suplimentara
+                                inovatoare pentru imbinari asigura o etanseitate maxima, chiar si in conditii de ploaie
+                                torentiala, precum si imbinari impermeabile, facilitand scurgerea apei.</p>
+                            <p><strong>Usile</strong> din tamplarie PVC au un caracter practice, ce se refera atat la
+                                design-ul simplist, pe care il puteti adopta in orice cadru, atat in exterior cat si in
+                                interior, mecanismul de functionare usor de utilizat de orice persoana, si modalitatea
+                                de curatare si ingrijire, ce constituie un adevarat avantaj. PVC-ul este un material
+                                fiabil, usor si reciclabil, si este o varianta ieftina pentru momentele in care sunteti
+                                limitat de resursele financiare, dar cautati anumite trasaturi esentiale: stabilitate,
+                                rezistenta, siguranta, aspect modern. Usile din termopan sunt foarte populare in randul
+                                publicului larg, pentru ca asigura o izolare dubla eficienta: fonica si termica, sunt
+                                realizate din materiale calitative, rezistente, prezinta optiunea de a selectiona
+                                manerul in functie de profilul usii si dublu sens pentru directia de deschidere.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Inapoi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Produse Modal 2 -->
+    <div class="produse-modal modal fade" id="produseModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Rulouri exterioare</h2>
+                            <p class="item-intro text-muted">Sunt realizate din PVC sau aluminiu şi sunt prezente într-o
+                                gamă extrem de largă de culori uni sau imitaţie de lemn.</p>
+                            <img class="img-responsive img-centered"
+                                 src="{% static "images/produse/rulou_aplicat.jpg" %}"
+                                 alt="rulou">
+                            <p>Rulourile exterioare, fie ele aplicate sau suprapuse, cu lamele din aluminiu umplute cu
+                                spuma poliuretanica sunt un produs de varf in materie de protectie solara pentru
+                                locuinte cu caracteristici foarte bune de izolatie termica, fonica si antiefractie</p>
+                            <p><strong>Rulourile aplicate</strong> sunt propuse la acele clădiri unde iniţial nu a fost
+                                prevăzut golul pentru caseta ruloului, montarea acestuia pe tamplărie avand loc
+                                ulterior. Nu necesită întreţinere avand un rol estetic deosebit. Sunt confecţionate la
+                                cerere în funcţie de dimensiunile locuinţei dumneavoastră; în urma montajului nu sunt
+                                necesare reparaţii ale glafurilor sau în zona adiacentă ferestrelor.</p>
+                            <p><strong>Rulourile suprapuse</strong> tencuibile (incastrate) sunt folosite la cladirile
+                                unde s-a luat in calcul chiar la construcţie folosirea acestora si s-a lasat loc pentru
+                                tocul acestora. Protejeaza impotriva agentilor externi de mediu: vant, praf, ploaie,
+                                grindina, asigurand totodata o viata indelungata a tamplariei. Alaturi de un montaj
+                                profesional izoleaza fonic incaperile (mai ales în zonele stradale).</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Inapoi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Produse Modal 3 -->
+    <div class="produse-modal modal fade" id="produseModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>JALUZELE VERTICALE</h2>
+                            <p class="item-intro text-muted">Modernism si eleganta .</p>
+                            <img class="img-responsive img-centered" src="{% static "images/produse/Jaluzele.jpg" %}"
+                                 alt="jaluzele">
+                            <p>Jaluzelele verticale dau o nota de modernism atat locuintei cat si biroului
+                                dumneavoastra, dandu-va posibilitatea de a crea un interior original, de o eleganta
+                                distinsa.Se compun din sina de aluminiu vopsita in culoarea alba si din benzile textile
+                                sau stofe care sunt intr-o multitudine de texturi si culori Stofele sunt tratate
+                                antistatic, nu necesita aproape nici o intretinere, deci sunt potrivite si pentru
+                                persoane alergice.Un alt avantaj il constituie varietatea de executie. Cu jaluzele
+                                verticale se pot umbri suprafete curbe si oblice, avand mai multe moduri de actionare.
+                                Jaluzelele verticale se pot monta in tavan sau cu console de pereti. Pot fi
+                                confecţionate pentru dimensiuni de pană la 60cm/350cm. Montajul se execută cu dibluri si
+                                horsuruburi pe tavan sau perete. Culoarea sinei de aluminiu: vopsita alb in camp
+                                electrostatic.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                    class="fa fa-times"></i>
+                                Inapoi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="produse-modal modal fade" id="produseModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>ROLETE TEXTILE</h2>
+                            <p class="item-intro text-muted">Minimalist si functional .</p>
+                            <img class="img-responsive img-centered" src="{% static "images/produse/rolete.jpg" %}"
+                                 alt="">
+                            <p>Roletele textile va protejeaza locuinta sau biroul de lumina si de caldura soarelui si va
+                                asigura intimitatea de care aveti nevoie. Sunt totodata un element de design modern si
+                                elegant, care schimba in mod placut aspectul oricarei incaperi. Pot fi configurate
+                                intr-o multitudine de materiale si culori, astfel ca se pot asorta foarte usor la orice
+                                amenajari interioare, in deplina armonie cu mobilierul, culoarea peretilor si a podelei;
+                                pot fi folosite in stil minimalist, ca unic element de decor si protectie solara pentru
+                                ferestre, dar si in combinatie cu draperiile moderne. Rulourile interioare aduc un plus
+                                de culoare, de buna dispozitie si de protectie la soare pentru orice camera a locuintei:
+                                living, dormitor, bucatarie sau balcon.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                    class="fa fa-times"></i>
+                                Inapoi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="produse-modal modal fade" id="produseModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>USI DE GARAJ</h2>
+                            <p class="item-intro text-muted">Tip rulou.</p>
+                            <img class="img-responsive img-centered" src="{% static "images/produse/Usi_garaj.jpg" %}"
+                                 alt="garaj">
+                            <p>Usor de montat si de utilizat zi cu zi, usile de garaj tip rulou au o aplicabilitate
+                                foarte raspandita fiind cel mai des folosite in inchiderile de garaje si de iesiri spre
+                                strada. Avantajul usilor tip rulou fata de cele sectionale consta in faptul ca toate
+                                lamelele se strang intr-o caseta care necesita si ocupa un spatiu mult mai mic.In
+                                functie de rezistenta si izolarea termica ceruta de proiect, lamelele au dimensiunea de
+                                55 sau 77mm, pe grosimi de 14, respectiv 19 mm.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                    class="fa fa-times"></i>
+                                Inapoi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Produse Modal 6 -->
+    <div class="produse-modal modal fade" id="produseModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Plase anti insecte</h2>
+                            <p class="item-intro text-muted">Tip rulou sau pe balamale</p>
+                            <img class="img-responsive img-centered" src="{% static "images/produse/plase.jpg" %}"
+                                 alt="plase">
+                            <p>Plasele pentru insecte reprezinta o modalitate foarte eficienta de evitare a neplacerilor
+                                produse de insecte. Plasele se executa din fibra de sticla instalata pe un schelet
+                                metalic din aluminiu.</p>
+                            <p><strong>Plasele tip rulou</strong> sunt sisteme de protectie antiinsecte care se monteaza
+                                doar la ferestre si sunt prevazute cu caseta pentru protectia sitei pe timp de iarna.
+                                Caseta este din aluminiu si este plasata la exteriorul ferestrei. Se actioneaza pe
+                                verticala si pot fi dotate cu frana siliconica, care reduce viteza de ridicare a plasei
+                                si astfel ii prelungeste durata de viata. Nu este necesara indepartarea lor pe timp de
+                                iarna. </p>
+                            <p><strong>Plasa simpla cu rama de aluminiu</strong> reprezinta varianta clasica de plasa
+                                impotriva insectelor folosita atat pentru usi, cat si pentru ferestre. Prinderea se
+                                poate face pe balamale sau coltari (plase fixe) si se poate monta pe orice tip de
+                                tamplarie. Plasa este rezistenta la razele solare si isi mentine culoarea vreme
+                                indelungata.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Inapoi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+
